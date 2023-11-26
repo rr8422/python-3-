@@ -108,8 +108,8 @@ welcome = """
 <body id="sample">
   <div class="textColumn">
     <h1>Congratulations!</h1>
-    <h1>Hey we deployed to docker files and docker containers we try to deployed</h1>
-    <h1>hello my friends we got an update thats we deployed docker files</h1>
+    <h1> Hey we deployed to docker files and docker containers we try to deployed</h1>
+    <h1> hello my friends</h1>
   </div>
   
   <div class="linksColumn"> 
