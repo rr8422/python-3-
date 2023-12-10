@@ -106,7 +106,7 @@ if ("POST".equalsIgnoreCase(request.getMethod())) {
 <body id="sample">
   <div class="textColumn">
     <h1>Congratulations</h1>
-    <h1>Hey we deployed our  &AWS; tomcat server it webserver it we deployed we applications &AWS; Cloud</h1>
+    <p>Hey we deployed our  &AWS; tomcat server it webserver it we deployed we applications &AWS; Cloud</p>
   </div>
   
   <div class="linksColumn"> 
