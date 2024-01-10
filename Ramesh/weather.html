@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #weather-container {
+      text-align: center;
+    }
+    #city-input {
+      padding: 8px;
+    }
+    #get-weather-btn {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="weather-container">
+  <h2>Weather App</h2>
+  <label for="city-input">Enter City: </label>
+  <input type="text" id="city-input" placeholder="Enter city">
+  <button id="get-weather-btn" onclick="getWeather()">Get Weather</button>
+  <div id="weather-info"></div>
+</div>
+
+<script>
+  function getWeather() {
+    const cityInput = document.getElementById('city-input');
+    const cityName = cityInput.value;
+
+    if (cityName.trim() === '') {
+      alert('Please enter a city name');
+      return;
+    }
+
+    // In a real application, you would use an API to fetch live weather data
+    // This is just a placeholder response
+    const weatherData = {
+      temperature: '25°C',
+      description: 'Clear sky',
+      humidity: '60%',
+      windSpeed: '10 km/h'
+    };
+
+    const weatherInfo = document.getElementById('weather-info');
+    weatherInfo.innerHTML = `
+      <h3>Weather in ${cityName}</h3>
+      <p>Temperature: ${weatherData.temperature}</p>
+      <p>Description: ${weatherData.description}</p>
+      <p>Humidity: ${weatherData.humidity}</p>
+      <p>Wind Speed: ${weatherData.windSpeed}</p>
+    `;
+  }
+</script>
+
+</body>
+</html>
