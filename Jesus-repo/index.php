@@ -24,9 +24,9 @@ else
 <body>
     <section class="congratulations">
         <h1>Congratulations!</h1>
-        <p>Your AWS Elastic Beanstalk <em>PHP</em> application is now running on your own dedicated environment in the AWS&nbsp;Cloud</p>
-        <p>You are running PHP version <?= phpversion() ?></p>
-        <p>This environment is launched with Elastic Beanstalk PHP Platform</p>
+        <h1> Hello friends today we deployed our php web applications <em>PHP</em> we using aws services like elasticbeanstalk and AWS&nbsp;Cloud</h1>
+        <h1> we download source code to aws elastic beanstalk nodejs download certain code is there  <?= phpversion() ?></h1>
+        <h1> we using some services codepipeline and code commit service and using identity acess management and we empty folder we adding the git and that code is commited and after push into the code codecommit  and they finally we run the code pipeline</h1>
     </section>
 
     <section class="instructions">
